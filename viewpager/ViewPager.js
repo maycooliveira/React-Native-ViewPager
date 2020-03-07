@@ -226,6 +226,8 @@ export default class ViewPager extends Component {
       if (this.props.onPageSelected)
         this.props.onPageSelected({ position: selectedPage });
     }
+    
+  }
 
     _onPageScrollOnAndroid (e) {
         if (this.props.onPageScroll) this.props.onPageScroll(e.nativeEvent)
@@ -338,5 +340,4 @@ export default class ViewPager extends Component {
         if (this.props.onPageSelected) this.props.onPageSelected({position: selectedPage})
     }
 
-  }
 }
